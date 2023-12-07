@@ -1,19 +1,17 @@
-## Data architecture of a TRE with C4 modelling language 
-
-A workshop by Joe Leach (LB Tower Hamlets Data Architect) [🌐](https://www.uktre.org/en/latest/events/wg_workshops/2023-12-05-december-meeting/workshop-tre-c4-architecture.html
+__Data architecture of a TRE with C4 modelling language__ A workshop by Joe Leach (LB Tower Hamlets Data Architect) [🌐](https://www.uktre.org/en/latest/events/wg_workshops/2023-12-05-december-meeting/workshop-tre-c4-architecture.html
 )[📜](https://hackmd.io/U08T3tHXTo64WXXjqVLb4A?both)
 
 ## 📦 Dependencies
 
-This notebook uses [structurizr-lite](https://structurizr.com/help/lite) to work with "diagrams as code" (a similar outcome could be achieved with a combination of [quarto](https://quarto.org) and [kroki](https://kroki.io)). In either case, the use of [git](https://git-scm.com) is recommend to support effective version control.
+This notebook uses [structurizr-lite](https://structurizr.com/help/lite) to work with "diagrams as code" (a similar outcome, though with non-interactive diagrams, could be achieved with a combination of [quarto](https://quarto.org) and [kroki](https://kroki.io)). In either case, the use of [git](https://git-scm.com) supports effective version control.
 
-The tool is created by the author of C4, and is possibly the best implementation as it allows you to nest elements for re-using at different levels in the zoom hierarchy, plus allows you to zoom between them. The diagrams themselves are rendered as a localhost website on your own machine and enable you to open designs in "presentation mode" making the best use of available screen space.
+structurizr-lite is created by the author of C4, and is possibly the best implementation as it allows you to re-render nested elements at different levels in the zoom hierarchy, this means that you only need to create elements once for use in multiple views. The tool allows zoom traversal of nested hierarchies. 
 
-Whilst C4 visually expresses **Context**, **Container**, and **Component**, it _doesn't_ express the **Code** element; this is becacuse this language generally describes high-level perspectives in software design. 
+The design outputs are rendered as a website on your local machine, and enable you to open designs in "presentation mode" making the best use of available screen space. You can also export the outputs to static webpages and images.
 
-The **Code** perspective _is_ needed for data architecture however to show data relations. In cases where the lowest level _is_ rendered, UML is used. For describing data architecture, **Entity Relation diagrams** are used here to show data relations. [kroki](https://kroki.io) is used for rendering Entity Relation Diagrams as images using either the [dbml](https://github.com/softwaretechnik-berlin/dbml-renderer) or [erd](https://github.com/BurntSushi/erd) packages 
+## 🛠️ Workshop
 
-## Summary
+### Summary
 
 This workshop will run some research questions through a draft TRE design for a HDRC (Health Determinants Research Collaborative). This design exposes the interfaces between architecture and trust for regulatory control of research data management. We will demonstrate how to:
 
@@ -69,8 +67,13 @@ Colleagues from data architecture, science, engineering, and governance.
 
 ![Overview of C4 modelling](c4-overview.png)
 
+#### Modelling data architecture with C4
 
-## 🛠️ Workshop
+Whilst C4 visually expresses **Context**, **Container**, and **Component**, it _doesn't_ express the **Code** element; this is becacuse this language generally describes high-level perspectives in software design. 
+
+The **Code** perspective _is_ needed for data architecture however to show data relations. In cases where the lowest level _is_ rendered, UML is used. For describing data architecture, **Entity Relation diagrams** are used here to show data relations. [kroki](https://kroki.io) is used for rendering Entity Relation Diagrams as images using either the [dbml](https://github.com/softwaretechnik-berlin/dbml-renderer) or [erd](https://github.com/BurntSushi/erd) packages 
+
+## Diagrams
 
 ### System landscape
 
