@@ -1,7 +1,7 @@
 ## Data architecture of a TRE with C4 modelling language 
 
 A workshop by Joe Leach (LB Tower Hamlets Data Architect) [🌐](https://www.uktre.org/en/latest/events/wg_workshops/2023-12-05-december-meeting/workshop-tre-c4-architecture.html
-)
+)[📜](https://hackmd.io/U08T3tHXTo64WXXjqVLb4A?both)
 
 ## 📦 Dependencies
 
@@ -57,7 +57,7 @@ Colleagues from data architecture, science, engineering, and governance.
 
 1. A set of hierarchical abstractions (software systems, containers, components, and code).
 2. A set of hierarchical diagrams (system context, containers, components, and code).
-3. Notation independent. C4 is a "self-describing" model, little-to-no prior training is required to being interpreting the diagrams!
+3. Notation independent. C4 is a "self-describing" model, little-to-no prior training is required to begin interpreting the diagrams!
 4. Tooling independent. You can draw C4 in any tool - this session focuses on the Structurizr tools created by the author of C4 as they offer some benefits.
 
 #### The four Cs of C4
