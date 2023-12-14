@@ -1,4 +1,4 @@
-workspace "council" "data store" {
+workspace "LBTH TRE" "data store" {
 
     model {
 

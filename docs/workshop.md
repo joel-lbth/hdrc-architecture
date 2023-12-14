@@ -1,13 +1,13 @@
-__Data architecture of a TRE with C4 modelling language__ A workshop by Joe Leach (LB Tower Hamlets Data Architect) [🌐](https://www.uktre.org/en/latest/events/wg_workshops/2023-12-05-december-meeting/workshop-tre-c4-architecture.html
+__Data architecture of a Trusted Research Environment (TRE) with C4 modelling language__ A workshop by Joe Leach (LB Tower Hamlets Data Architect) [🌐](https://www.uktre.org/en/latest/events/wg_workshops/2023-12-05-december-meeting/workshop-tre-c4-architecture.html
 )[📜](https://hackmd.io/U08T3tHXTo64WXXjqVLb4A?both)
 
 ## 📦 Dependencies
 
-This notebook uses [structurizr-lite](https://structurizr.com/help/lite) to work with "diagrams as code" (a similar outcome, though with non-interactive diagrams, could be achieved with a combination of [quarto](https://quarto.org) and [kroki](https://kroki.io)). In either case, the use of [git](https://git-scm.com) supports effective version control.
+This notebook uses [structurizr-lite](https://structurizr.com/help/lite) to work with "diagrams as code".
 
 structurizr-lite is created by the author of C4, and is possibly the best implementation as it allows you to re-render nested elements at different levels in the zoom hierarchy, this means that you only need to create elements once for use in multiple views. The tool allows zoom traversal of nested hierarchies. 
 
-The design outputs are rendered as a website on your local machine, and enable you to open designs in "presentation mode" making the best use of available screen space. You can also export the outputs to static webpages and images.
+The design outputs are rendered as a website on your local machine, and enable you to open designs in "presentation mode" making the best use of available screen space. You can also export the outputs to static webpages .
 
 ## 🛠️ Workshop
 
@@ -15,7 +15,7 @@ The design outputs are rendered as a website on your local machine, and enable y
 
 This workshop will run some research questions through a draft TRE design for a HDRC (Health Determinants Research Collaborative). This design exposes the interfaces between architecture and trust for regulatory control of research data management. We will demonstrate how to:
 
-1. Run a catalogue of fresh metadata describing a network of data controllers (council and health services)
+1. Run a metadata catalogue describing a network of controlled datasets (council and health services)
     1. Enrich metadata (e.g. by describing data quality dimensions)
 1. Support reproducible analytical pipelines that run inside a TRE to
     1. Receive de-identified data from different sources, each of which has applied the same encryption key to identifiers.
@@ -31,7 +31,7 @@ To help communicate this approach to TRE design, we have experimented with analo
 
 ### Preparation
 
-Readers should be familiar with [The Goldacre Review](https://www.goldacrereview.org). Here's some of the summary recommendations: 
+Readers should be familiar with [The Goldacre Review](https://www.goldacrereview.org).
 
 #### Goldacre on platforms and security
 
@@ -69,15 +69,17 @@ Colleagues from data architecture, science, engineering, and governance.
 
 #### Modelling data architecture with C4
 
-Whilst C4 visually expresses **Context**, **Container**, and **Component**, it _doesn't_ express the **Code** element; this is becacuse this language generally describes high-level perspectives in software design. 
+Whilst C4 visually expresses **Context**, **Container**, and **Component**, it _doesn't_ express the **Code** element; this is because this language generally describes high-level perspectives in software design. 
 
-The **Code** perspective _is_ needed for data architecture however to show data relations. In cases where the lowest level _is_ rendered, UML is used. For describing data architecture, **Entity Relation diagrams** are used here to show data relations. [kroki](https://kroki.io) is used for rendering Entity Relation Diagrams as images using either the [dbml](https://github.com/softwaretechnik-berlin/dbml-renderer) or [erd](https://github.com/BurntSushi/erd) packages 
+The **Code** perspective _is_ needed for data architecture however to show the data model, which is relevant in research data where linkages between tables are made explicit in metadata catalogues. 
+
+**Entity Relation diagrams** are used here to show this level of perspective. [kroki](https://kroki.io) is used for rendering Entity Relation Diagrams as images using either the [dbml](https://github.com/softwaretechnik-berlin/dbml-renderer) or [erd](https://github.com/BurntSushi/erd) packages 
 
 ## Diagrams
 
 ### System landscape
 
-<mark>💡 Tip: If viewing via structurizr, you can press the "Enter Presentation Mode" button to see these diagram fullscreen</mark>
+<mark>💡 Tip: If viewing with structurizr-cli (not the static version on github.io), you can press the "Enter Presentation Mode" button to see diagrams fullscreen</mark>
 
 ![overall design](embed:systemlandscape)
 
@@ -146,7 +148,7 @@ Imagine a trusted research environment as a reference library. Researchers are a
 
 **Collaboration Spaces**: Libraries often provide collaborative spaces where researchers can work together. collaborative platforms allow researchers to share and collaborate on data while maintaining the integrity and security of the information.
 
-**Documentation and Cataloging**: The library meticulously documents and catalogs its collection for easy retrieval. Similarly, thorough documentation and metadata are maintained to track the origin, usage, and modifications of data for transparency and reproducibility.
+**Documentation and Cataloguing**: The library meticulously documents and catalogs its collection for easy retrieval. Similarly, thorough documentation and metadata are maintained to track the origin, usage, and modifications of data for transparency and reproducibility.
 
 Just as a reference library is a reliable hub for researchers seeking accurate information, a trusted research environment serves as a secure and controlled space for researchers to access and work with validated data for scientific inquiry.
 
@@ -158,7 +160,7 @@ The governance of inbound/outbound people, processes, and records in a TRE has s
 
 **Approved plans**: Researchers may need approval for their research plans, ensuring that they adhere to ethical standards, legal requirements, and data access protocols.
 
-**Restricted Access**: There are restricted access spaces for data, maintaining the separation between reseach investigations.
+**Restricted Access**: There are restricted access spaces for data, maintaining the separation between research investigations.
 
 **Communication Protocols**: There are communication protocols and guidelines for researchers to interact with librarians/administrators and share information responsibly.
 
