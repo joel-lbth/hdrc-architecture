@@ -3,11 +3,14 @@ __Data architecture of a Trusted Research Environment (TRE) with C4 modelling la
 
 ## 📦 Dependencies
 
-This notebook uses [structurizr-lite](https://structurizr.com/help/lite) to work with "diagrams as code".
+> [C4](https://c4model.com) a simple and accessible systems engineering design approach which gives 4 levels of perspective ranging from systems context, through discreet self-contained tools, the components within, and the data models expressed.
 
-structurizr-lite is created by the author of C4, and is possibly the best implementation as it allows you to re-render nested elements at different levels in the zoom hierarchy, this means that you only need to create elements once for use in multiple views. The tool allows zoom traversal of nested hierarchies. 
+This notebook was built with [structurizr-lite](https://structurizr.com/help/lite) to work with C4 and produce "diagrams as code". Structurizr-lite is created by the inventor of C4, and is possibly the best diagramming implementation available as it:
 
-The design outputs are rendered as a website on your local machine, and enable you to open designs in "presentation mode" making the best use of available screen space. You can also export the outputs to static webpages .
+  1. Allows elements to be re-used at different levels in the C4 view hierarchy, this means that you only need to create elements once.
+  2. The tool supports zooming in through the C4 hierarchies.
+  3. The design outputs are rendered as a website on your local machine, and enable you to open designs in "presentation mode" making the best use of available screen space. 
+  4. You can also export the outputs to static webpages, such as the one  you're currently reading!
 
 ## 🛠️ Workshop
 
@@ -48,8 +51,6 @@ Readers should be familiar with [The Goldacre Review](https://www.goldacrereview
 Colleagues from data architecture, science, engineering, and governance.
 
 ### On C4
-
-[https://c4model.com](https://c4model.com)
 
 #### The C4 model is...
 
